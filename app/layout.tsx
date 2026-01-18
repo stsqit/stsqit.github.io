@@ -1,30 +1,19 @@
 import type React from "react"
 import type { Metadata } from "next"
-import localFont from "next/font/local"
+import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { ThemeSync } from "@/components/theme-sync"
 import "./globals.css"
+import { Coda as Colfax } from "next/font/google" // Import Colfax font
 
-const colfax = localFont({
-  src: [
-    {
-      path: "../public/fonts/Colfax-Regular.woff2",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/Colfax-Medium.woff2",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/Colfax-Bold.woff2",
-      weight: "700",
-      style: "normal",
-    },
-  ],
+const inter = Inter({
+  subsets: ["latin", "cyrillic"],
+  variable: "--font-sans",
+})
+
+const colfax = Colfax({ // Declare colfax variable
+  subsets: ["latin"],
   variable: "--font-colfax",
-  fallback: ["system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
 })
 
 export const metadata: Metadata = {
@@ -72,7 +61,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${colfax.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} font-sans antialiased`}>
         <ThemeSync />
         {children}
         <Analytics />
