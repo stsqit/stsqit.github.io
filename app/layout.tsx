@@ -4,16 +4,10 @@ import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { ThemeSync } from "@/components/theme-sync"
 import "./globals.css"
-import { Coda as Colfax } from "next/font/google" // Import Colfax font
 
 const inter = Inter({
   subsets: ["latin", "cyrillic"],
   variable: "--font-sans",
-})
-
-const colfax = Colfax({ // Declare colfax variable
-  subsets: ["latin"],
-  variable: "--font-colfax",
 })
 
 export const metadata: Metadata = {
