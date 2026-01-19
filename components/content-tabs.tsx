@@ -15,7 +15,7 @@ const highlights = [
   },
   {
     type: "video" as const,
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/drone-wYYE0ZNnd8q0PL0msXTMIpwvxdnx0L.mp4",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/drone-video-UmSMHNpFdAgYuVvBXGKUqDVyFuCVsO.mp4",
     title: "Drone",
   },
   {
@@ -28,21 +28,15 @@ const highlights = [
 const timeline = [
   {
     year: "2025",
-    text: "Out of stealth! Co-founded",
-    link: { text: "Generalist", href: "#" },
-    suffix: "to make general-purpose robots a reality",
-  },
-  {
-    year: "2024",
-    text: "IEEE Robotics and Automation (RAS)",
-    link: { text: "Early Career Award", href: "#" },
-    suffix: "",
+    text: "Founded Oli Robotics to make Physical AI work at scale",
   },
   {
     year: "2023",
-    text: "Conference on Robot Learning (CoRL)",
-    link: { text: "Best Student Paper Award", href: "#" },
-    suffix: "",
+    text: "Bootstrapped large-scale data SaaS to 600K monthly users",
+  },
+  {
+    year: "2016",
+    text: "Founded VTOL drone delivery startup to deliver small packages in cities",
   },
 ]
 
@@ -153,15 +147,7 @@ export function ContentTabs() {
             {timeline.map((item, index) => (
               <div key={index} className="flex items-start gap-4">
                 <span className="w-12 shrink-0 text-sm text-muted-foreground">{item.year}</span>
-                <p className="text-sm text-foreground">
-                  {item.text}{" "}
-                  {item.link && (
-                    <Link href={item.link.href} className="text-blue-600 hover:underline">
-                      {item.link.text}
-                    </Link>
-                  )}
-                  {item.suffix && ` ${item.suffix}`}
-                </p>
+                <p className="text-sm text-foreground">{item.text}</p>
               </div>
             ))}
           </div>
