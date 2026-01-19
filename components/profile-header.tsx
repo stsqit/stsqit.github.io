@@ -20,7 +20,7 @@ export function ProfileHeader() {
 
           <nav className="mt-6 flex flex-wrap items-center gap-4 text-sm">
             <Link
-              href="https://twitter.com"
+              href="https://x.com/stsqit"
               className="text-blue-600 hover:underline"
               target="_blank"
               rel="noopener noreferrer"
@@ -28,15 +28,7 @@ export function ProfileHeader() {
               X (Twitter)
             </Link>
             <Link
-              href="https://scholar.google.com"
-              className="text-blue-600 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              G. Scholar
-            </Link>
-            <Link
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/stsqit"
               className="text-blue-600 hover:underline"
               target="_blank"
               rel="noopener noreferrer"

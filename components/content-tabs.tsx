@@ -9,16 +9,19 @@ type Tab = (typeof tabs)[number]
 
 const highlights = [
   {
-    video: "/videos/highlight-1.mp4",
-    title: "Video 1",
+    type: "video" as const,
+    src: "/videos/highlight-1.mov",
+    title: "Robot Barista",
   },
   {
-    video: "/videos/highlight-2.mp4",
-    title: "Video 2",
+    type: "video" as const,
+    src: "/videos/highlight-2.mp4",
+    title: "Drone",
   },
   {
-    video: "/videos/highlight-3.mp4",
-    title: "Video 3",
+    type: "image" as const,
+    src: "/videos/highlight-3.jpg",
+    title: "QuiqR Dashcam",
   },
 ]
 
@@ -126,15 +129,23 @@ export function ContentTabs() {
           <div className="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
             {highlights.map((item, index) => (
               <div key={index} className="overflow-hidden rounded-lg bg-muted">
-                <video
-                  src={item.video}
-                  className="h-48 w-full object-cover pointer-events-none"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  preload="auto"
-                />
+                {item.type === "video" ? (
+                  <video
+                    src={item.src}
+                    className="h-48 w-full object-cover pointer-events-none"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    preload="auto"
+                  />
+                ) : (
+                  <img
+                    src={item.src}
+                    alt={item.title}
+                    className="h-48 w-full object-cover"
+                  />
+                )}
               </div>
             ))}
           </div>
