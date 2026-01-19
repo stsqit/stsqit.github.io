@@ -10,7 +10,7 @@ type Tab = (typeof tabs)[number]
 const highlights = [
   {
     type: "video" as const,
-    src: "/videos/highlight-1.mov",
+    src: "/videos/highlight-1.mp4",
     title: "Robot Barista",
   },
   {
@@ -137,7 +137,6 @@ export function ContentTabs() {
                     loop
                     muted
                     playsInline
-                    preload="auto"
                   />
                 ) : (
                   <img
