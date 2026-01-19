@@ -27,8 +27,14 @@ const highlights = [
 
 const timeline = [
   {
+    year: "2026",
+    text: "Founded",
+    link: { text: "Oli Robotics", href: "https://olirobotics.com" },
+    suffix: "to make Physical AI work at scale",
+  },
+  {
     year: "2025",
-    text: "Founded Oli Robotics to make Physical AI work at scale",
+    text: "Founded first fully autonomous AI cafe where robots make coffee, clean, restock, and run the entire operation",
   },
   {
     year: "2023",
@@ -147,7 +153,18 @@ export function ContentTabs() {
             {timeline.map((item, index) => (
               <div key={index} className="flex items-start gap-4">
                 <span className="w-12 shrink-0 text-sm text-muted-foreground">{item.year}</span>
-                <p className="text-sm text-foreground">{item.text}</p>
+                <p className="text-sm text-foreground">
+                  {item.text}
+                  {item.link && (
+                    <>
+                      {" "}
+                      <Link href={item.link.href} className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
+                        {item.link.text}
+                      </Link>
+                    </>
+                  )}
+                  {item.suffix && ` ${item.suffix}`}
+                </p>
               </div>
             ))}
           </div>
