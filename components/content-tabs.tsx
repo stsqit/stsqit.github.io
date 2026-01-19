@@ -137,6 +137,8 @@ export function ContentTabs() {
                     loop
                     muted
                     playsInline
+                    onLoadedData={() => console.log("[v0] Video loaded:", item.src)}
+                    onError={(e) => console.log("[v0] Video error:", item.src, e.currentTarget.error)}
                   />
                 ) : (
                   <img
