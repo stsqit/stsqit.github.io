@@ -10,17 +10,17 @@ type Tab = (typeof tabs)[number]
 const highlights = [
   {
     type: "video" as const,
-    src: "/videos/highlight-1.mp4",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8672-aWuffgyz2iq9M7qyaJdVMyQMplfymW.mp4",
     title: "Robot Barista",
   },
   {
     type: "video" as const,
-    src: "/videos/highlight-2.mp4",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/drone-wYYE0ZNnd8q0PL0msXTMIpwvxdnx0L.mp4",
     title: "Drone",
   },
   {
     type: "image" as const,
-    src: "/videos/highlight-3.jpg",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_5ung05ung05ung05.png-vhnZyOIcigRtwwlFjBhcdUEINWQvsp.jpeg",
     title: "QuiqR Dashcam",
   },
 ]
@@ -137,8 +137,6 @@ export function ContentTabs() {
                     loop
                     muted
                     playsInline
-                    onLoadedData={() => console.log("[v0] Video loaded:", item.src)}
-                    onError={(e) => console.log("[v0] Video error:", item.src, e.currentTarget.error)}
                   />
                 ) : (
                   <img
