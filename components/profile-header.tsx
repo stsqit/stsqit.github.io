@@ -8,7 +8,7 @@ export function ProfileHeader() {
         <div className="flex-1">
           <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground md:text-5xl">Ismail Karankin</h1>
 
-          <div className="space-y-4 text-base leading-relaxed text-foreground/90">
+          <div className="space-y-4 text-lg leading-relaxed text-foreground/90">
             <p>
               Founder of Oli Robotics. Aerospace engineer with hands-on experience across robotics software and hardware. I've built an autonomous drone delivery startup, a fully automated robot barista, and several large-scale data processing systems. Previously, I bootstrapped a SaaS product that reached 600K monthly users.
             </p>

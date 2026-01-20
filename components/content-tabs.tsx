@@ -149,11 +149,11 @@ export function ContentTabs() {
             ))}
           </div>
 
-          <div className="space-y-3">
+          <div className="space-y-4">
             {timeline.map((item, index) => (
               <div key={index} className="flex items-start gap-4">
-                <span className="w-12 shrink-0 text-sm text-muted-foreground">{item.year}</span>
-                <p className="text-sm text-foreground">
+                <span className="w-14 shrink-0 text-base text-muted-foreground">{item.year}</span>
+                <p className="text-base text-foreground">
                   {item.text}
                   {item.link && (
                     <>
