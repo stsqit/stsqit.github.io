@@ -175,9 +175,9 @@ export function ContentTabs() {
         <div className="space-y-4">
           {publications.map((pub, index) => (
             <div key={index} className="flex items-start gap-2">
-              <span className="text-sm text-foreground">{pub.title}</span>
-              <span className="text-sm text-muted-foreground">—</span>
-              <Link href={pub.href} className="shrink-0 text-sm text-blue-600 hover:underline">
+              <span className="text-base text-foreground">{pub.title}</span>
+              <span className="text-base text-muted-foreground">—</span>
+              <Link href={pub.href} className="shrink-0 text-base text-blue-600 hover:underline">
                 {pub.outlet}
               </Link>
             </div>
@@ -189,9 +189,9 @@ export function ContentTabs() {
         <div className="space-y-4">
           {press.map((item, index) => (
             <div key={index} className="flex items-start gap-2">
-              <span className="text-sm text-foreground">{item.title}</span>
-              <span className="text-sm text-muted-foreground">—</span>
-              <Link href={item.href} className="shrink-0 text-sm text-blue-600 hover:underline">
+              <span className="text-base text-foreground">{item.title}</span>
+              <span className="text-base text-muted-foreground">—</span>
+              <Link href={item.href} className="shrink-0 text-base text-blue-600 hover:underline">
                 {item.outlet}
               </Link>
             </div>
