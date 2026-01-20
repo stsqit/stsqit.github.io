@@ -18,7 +18,7 @@ export function ProfileHeader() {
             </p>
           </div>
 
-          <nav className="mt-6 flex flex-wrap items-center gap-4 text-sm">
+          <nav className="mt-6 flex flex-wrap items-center gap-4 text-base">
             <Link
               href="https://x.com/stsqit"
               className="text-blue-600 hover:underline"
@@ -37,7 +37,7 @@ export function ProfileHeader() {
             </Link>
           </nav>
 
-          <p className="mt-4 text-sm text-foreground/80">ismail at olirobotics dot com</p>
+          <p className="mt-4 text-base text-foreground/80">ismail at olirobotics dot com</p>
         </div>
 
         <div className="shrink-0">

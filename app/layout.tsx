@@ -11,10 +11,23 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Ismail Karankin - Robotics Engineer & Founder",
+  title: "Ismail Karankin - Physical AI / Robotics / VLA / VLM / Aerospace",
   description:
-    "Founder of Oli Robotics. Aerospace engineer building autonomous drones, robot baristas, and scalable robotics systems.",
+    "Founder of Oli Robotics. Aerospace engineer with hands-on experience across robotics software and hardware. Built an autonomous drone delivery startup, a fully automated robot barista, and large-scale data processing systems. Focused on scaling real-world robotics through end-to-end systems — data-driven and VLA-native.",
   generator: "v0.app",
+  keywords: ["Physical AI", "Robotics", "VLA", "VLM", "Aerospace", "Oli Robotics", "Ismail Karankin", "Robot Barista", "Drone Delivery", "AI"],
+  authors: [{ name: "Ismail Karankin" }],
+  openGraph: {
+    title: "Ismail Karankin - Physical AI / Robotics / VLA / VLM / Aerospace",
+    description: "Founder of Oli Robotics. Aerospace engineer building autonomous drones, robot baristas, and scalable robotics systems.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ismail Karankin - Physical AI / Robotics / VLA / VLM / Aerospace",
+    description: "Founder of Oli Robotics. Aerospace engineer building autonomous drones, robot baristas, and scalable robotics systems.",
+    creator: "@stsqit",
+  },
   icons: {
     icon: "/icon.svg",
   },
