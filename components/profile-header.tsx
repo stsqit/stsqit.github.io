@@ -35,6 +35,14 @@ export function ProfileHeader() {
             >
               LinkedIn
             </Link>
+            <Link
+              href="https://calendly.com/stsqitx"
+              className="text-blue-600 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Schedule a call
+            </Link>
           </nav>
 
           <p className="mt-4 text-base text-foreground/80">ismail at olirobotics dot com</p>
