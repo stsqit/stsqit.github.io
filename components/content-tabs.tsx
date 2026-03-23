@@ -28,9 +28,7 @@ const highlights = [
 const timeline = [
   {
     year: "2026",
-    text: "Founded",
-    link: { text: "Oli Robotics", href: "https://olirobotics.com" },
-    suffix: "to make Physical AI work at scale",
+    text: "Founded a stealth startup in Physical AI to make robots work at scale",
   },
   {
     year: "2025",
