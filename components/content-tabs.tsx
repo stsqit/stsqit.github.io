@@ -118,6 +118,7 @@ export function ContentTabs() {
                 ? "border-b-2 border-foreground text-foreground"
                 : "text-muted-foreground hover:text-foreground/80",
             )}
+            style={{ fontFamily: 'var(--font-heading)' }}
           >
             {tab}
           </button>
