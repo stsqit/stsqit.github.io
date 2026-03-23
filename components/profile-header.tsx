@@ -6,7 +6,7 @@ export function ProfileHeader() {
     <header className="mb-12">
       <div className="flex flex-col-reverse gap-8 md:flex-row md:justify-between">
         <div className="flex-1">
-          <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground md:text-5xl">Ismail Karankin</h1>
+          <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground md:text-5xl" style={{ fontFamily: 'var(--font-heading)' }}>Ismail Karankin</h1>
 
           <div className="space-y-4 text-lg leading-relaxed text-foreground/90">
             <p>
@@ -44,8 +44,6 @@ export function ProfileHeader() {
               Schedule a call
             </Link>
           </nav>
-
-          <p className="mt-4 text-base text-foreground/80">ismail at olirobotics dot com</p>
         </div>
 
         <div className="shrink-0">

@@ -2,24 +2,32 @@
 @import 'tw-animate-css';
 
 @font-face {
-  font-family: 'Colfax';
-  src: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Colfax-Regular-fhWtwekHhoeYDBjN9ITWJnp2pDR0T2.woff') format('woff');
+  font-family: 'DieGroteskA';
+  src: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/die-grotesk-a-regular-ho5mIQ916RCMKnEi6XKdfKOydNiCVh.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Colfax';
-  src: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Colfax-Medium-L6dOdwjVYwrxR2QAUpSrGgcbGtVkbD.woff') format('woff');
-  font-weight: 500;
+  font-family: 'DieGroteskA';
+  src: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/die-grotesk-a-bold-KimLFSvAbOsr3EDsn8ZUzAuQEyOfev.woff2') format('woff2');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Colfax';
-  src: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Colfax-Bold-kJlUp1G5xTXCXxrFztmigP53YOrE9J.woff') format('woff');
+  font-family: 'DieGroteskB';
+  src: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/die-grotesk-b-regular-wpexk8AuM3UcdmEMbEeRAsv3GFw0ao.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DieGroteskB';
+  src: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/die-grotesk-b-bold-4C3yn8PKXhmDbwLGcXuiEwEGzPnUZY.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -99,7 +107,8 @@
 }
 
 @theme inline {
-  --font-sans: 'Colfax', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-sans: 'DieGroteskA', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'DieGroteskB', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
   --color-background: var(--background);
   --color-foreground: var(--foreground);
