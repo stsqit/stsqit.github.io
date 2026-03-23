@@ -44,8 +44,6 @@ export function ProfileHeader() {
               Schedule a call
             </Link>
           </nav>
-
-          <p className="mt-4 text-base text-foreground/80">ismail at olirobotics dot com</p>
         </div>
 
         <div className="shrink-0">
