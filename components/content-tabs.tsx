@@ -83,22 +83,22 @@ const press = [
   {
     title: "The Future of Robotics: AI-Powered Adaptation for Safer Workplaces",
     outlet: "Hackernoon",
-    href: "#",
+    href: "https://hackernoon.com/the-future-of-robotics-ai-powered-adaptation-for-safer-workplaces",
   },
   {
     title: "How a Kazakhstani Created an AI Barista",
     outlet: "Forbes",
-    href: "#",
+    href: "https://forbes-kz.translate.goog/articles/kak-kazahstanets-sozdal-ii-barista-i-privlek-150tysyach-investitsiy-db9e60?_x_tr_sl=ru&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp",
   },
   {
     title: "Kazakh Startup Attracts $150,000 with AI Barista",
     outlet: "AstanaTimes",
-    href: "#",
+    href: "https://astanatimes.com/2024/12/kazakh-startup-attracts-150000-with-ai-barista/",
   },
   {
-    title: "Startup from Kazakhstan raised 150K in US",
+    title: "Kazakhstani raised 150K$ on AI robot barista",
     outlet: "Kursiv",
-    href: "#",
+    href: "https://kz-kursiv-media.translate.goog/kk/2024-12-17/qazaqstandyq-kaesipker-barista-robot-startabyna-amerikadan-150-myng-dollar-tartty/?_x_tr_sl=kk&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp",
   },
 ]
 
@@ -113,7 +113,7 @@ export function ContentTabs() {
             key={tab}
             onClick={() => setActiveTab(tab)}
             className={cn(
-              "pb-3 text-lg font-medium transition-colors",
+              "pb-3 text-lg font-bold transition-colors",
               activeTab === tab
                 ? "border-b-2 border-foreground text-foreground"
                 : "text-muted-foreground hover:text-foreground/80",
@@ -192,7 +192,7 @@ export function ContentTabs() {
             <div key={index} className="flex items-start gap-2">
               <span className="text-base text-foreground">{item.title}</span>
               <span className="text-base text-muted-foreground">—</span>
-              <Link href={item.href} className="shrink-0 text-base text-blue-600 hover:underline">
+              <Link href={item.href} className="shrink-0 text-base text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
                 {item.outlet}
               </Link>
             </div>
