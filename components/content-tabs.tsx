@@ -50,32 +50,32 @@ const publications = [
   {
     title: "Predict the cost of trucking logistics by city using data from logistics marketplaces",
     outlet: "Habr",
-    href: "#",
+    href: "https://habr.com/en/articles/860804/",
   },
   {
     title: "How to recognize faces with the FAISS library",
     outlet: "TProger.ru",
-    href: "#",
+    href: "https://tproger-ru.translate.goog/articles/raspoznavanie-lic-ispolzuya-bibliote-faiss?_x_tr_sl=ru&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp",
   },
   {
     title: "How AI is Shaping the Future of Robotics and Workplace Safety",
     outlet: "Habr",
-    href: "#",
+    href: "https://habr.com/en/articles/865216/",
   },
   {
     title: "Master Company Name Matching in Minutes with Python's Ready-Made Libraries",
     outlet: "Hackernoon",
-    href: "#",
+    href: "https://hackernoon.com/master-company-name-matching-in-minutes-with-pythons-ready-made-libraries",
   },
   {
     title: "Web Bot Detection using Mouse Detection",
     outlet: "Scientific Article",
-    href: "#",
+    href: "https://apni.ru/uploads/ai_1-1_2025.pdf",
   },
   {
     title: "Built robot barista in 6 months",
     outlet: "Reddit",
-    href: "#",
+    href: "https://www.reddit.com/r/robotics/comments/1mma1ma/built_simple_barista_robot_in_6_months/",
   },
 ]
 
@@ -177,7 +177,7 @@ export function ContentTabs() {
             <div key={index} className="flex items-start gap-2">
               <span className="text-base text-foreground">{pub.title}</span>
               <span className="text-base text-muted-foreground">—</span>
-              <Link href={pub.href} className="shrink-0 text-base text-blue-600 hover:underline">
+              <Link href={pub.href} className="shrink-0 text-base text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
                 {pub.outlet}
               </Link>
             </div>
