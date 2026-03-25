@@ -14,7 +14,7 @@ export function ProfileHeader() {
             </p>
 
             <p>
-              Currently, I'm focused on scaling real-world robotics through end-to-end systems — data-driven and VLA-native.
+              Solving the world's toughest problems through engineering.
             </p>
           </div>
 

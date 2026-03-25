@@ -4,7 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 
-const tabs = ["Highlights", "Publications", "Press"] as const
+const tabs = ["Highlights", "Publications", "Press", "Video"] as const
 type Tab = (typeof tabs)[number]
 
 const highlights = [
@@ -97,6 +97,29 @@ const press = [
     title: "Kazakhstani raised 150K$ on AI robot barista",
     outlet: "Kursiv",
     href: "https://kz-kursiv-media.translate.goog/kk/2024-12-17/qazaqstandyq-kaesipker-barista-robot-startabyna-amerikadan-150-myng-dollar-tartty/?_x_tr_sl=kk&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp",
+  },
+]
+
+const videos = [
+  {
+    src: "/videos/Robot_spills_coffee.mp4",
+    title: "Robot spills coffee",
+    stats: "4M views · 200K likes",
+  },
+  {
+    src: "/videos/Engineer-explains-his-prototype-for-an-parking-automation.mp4",
+    title: "Parking automation",
+    stats: "2M views · 40K likes",
+  },
+  {
+    src: "/videos/This startup founder built an AI coffee shop that can make coffee as good as any barista autonom.mp4",
+    title: "AI coffee shop",
+    stats: "",
+  },
+  {
+    src: "/videos/Bro automated espressos before revenue_@mytechceo.mp4",
+    title: "Automated espressos",
+    stats: "",
   },
 ]
 
@@ -193,6 +216,27 @@ export function ContentTabs() {
               <Link href={item.href} className="shrink-0 text-base text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
                 {item.outlet}
               </Link>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {activeTab === "Video" && (
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          {videos.map((item, index) => (
+            <div key={index} className="overflow-hidden rounded-lg">
+              <video
+                src={item.src}
+                className="w-full rounded-lg"
+                autoPlay
+                loop
+                muted
+                playsInline
+                style={{ pointerEvents: "none" }}
+              />
+              {item.stats && (
+                <p className="mt-2 text-sm text-muted-foreground">{item.stats}</p>
+              )}
             </div>
           ))}
         </div>
